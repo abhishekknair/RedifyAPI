@@ -1,0 +1,11 @@
+C:\Applications\RedifyService\RedifyService\bin\Debug\netcoreapp2.0\RedifyService.deps.json
+C:\Applications\RedifyService\RedifyService\bin\Debug\netcoreapp2.0\RedifyService.runtimeconfig.json
+C:\Applications\RedifyService\RedifyService\bin\Debug\netcoreapp2.0\RedifyService.runtimeconfig.dev.json
+C:\Applications\RedifyService\RedifyService\bin\Debug\netcoreapp2.0\RedifyService.dll
+C:\Applications\RedifyService\RedifyService\bin\Debug\netcoreapp2.0\RedifyService.pdb
+C:\Applications\RedifyService\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.csproj.CoreCompileInputs.cache
+C:\Applications\RedifyService\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.AssemblyInfoInputs.cache
+C:\Applications\RedifyService\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.AssemblyInfo.cs
+C:\Applications\RedifyService\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.dll
+C:\Applications\RedifyService\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.pdb
+C:\Applications\RedifyService\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.csprojResolveAssemblyReference.cache
