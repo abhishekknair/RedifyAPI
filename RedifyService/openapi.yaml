@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   version: v1
   title: Readify API
-  host: readifyapi1.appspot.com 
+host: readifyapi1.appspot.com 
 paths:
   /api/Token:
     get:
