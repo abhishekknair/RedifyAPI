@@ -9,3 +9,14 @@ C:\Applications\RedifyService\RedifyService\obj\Debug\netcoreapp2.0\RedifyServic
 C:\Applications\RedifyService\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.dll
 C:\Applications\RedifyService\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.pdb
 C:\Applications\RedifyService\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.csprojResolveAssemblyReference.cache
+C:\Applications\Redify\RedifyService\bin\Debug\netcoreapp2.0\RedifyService.deps.json
+C:\Applications\Redify\RedifyService\bin\Debug\netcoreapp2.0\RedifyService.runtimeconfig.json
+C:\Applications\Redify\RedifyService\bin\Debug\netcoreapp2.0\RedifyService.runtimeconfig.dev.json
+C:\Applications\Redify\RedifyService\bin\Debug\netcoreapp2.0\RedifyService.dll
+C:\Applications\Redify\RedifyService\bin\Debug\netcoreapp2.0\RedifyService.pdb
+C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.csprojResolveAssemblyReference.cache
+C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.csproj.CoreCompileInputs.cache
+C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.AssemblyInfoInputs.cache
+C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.AssemblyInfo.cs
+C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.dll
+C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.pdb

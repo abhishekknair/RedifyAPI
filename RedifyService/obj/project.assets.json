@@ -8764,11 +8764,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Applications\\RedifyService\\RedifyService\\RedifyService.csproj",
+      "projectUniqueName": "C:\\Applications\\Redify\\RedifyService\\RedifyService.csproj",
       "projectName": "RedifyService",
-      "projectPath": "C:\\Applications\\RedifyService\\RedifyService\\RedifyService.csproj",
+      "projectPath": "C:\\Applications\\Redify\\RedifyService\\RedifyService.csproj",
       "packagesPath": "C:\\Users\\naira\\.nuget\\packages\\",
-      "outputPath": "C:\\Applications\\RedifyService\\RedifyService\\obj\\",
+      "outputPath": "C:\\Applications\\Redify\\RedifyService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
