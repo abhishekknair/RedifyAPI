@@ -16,7 +16,10 @@ C:\Applications\Redify\RedifyService\bin\Debug\netcoreapp2.0\RedifyService.dll
 C:\Applications\Redify\RedifyService\bin\Debug\netcoreapp2.0\RedifyService.pdb
 C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.csprojResolveAssemblyReference.cache
 C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.csproj.CoreCompileInputs.cache
+C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.RazorAssemblyInfo.cache
+C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.RazorAssemblyInfo.cs
 C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.AssemblyInfoInputs.cache
 C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.AssemblyInfo.cs
+C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.RazorTargetAssemblyInfo.cache
 C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.dll
 C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.pdb
