@@ -2,4 +2,4 @@ runtime: aspnetcore
 env: flex 
 endpoints_api_service: 
 	name: readifyapi1.appspot.com 
-	rollout_strategy: managed
+rollout_strategy: managed
