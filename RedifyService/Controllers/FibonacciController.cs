@@ -12,7 +12,7 @@ namespace RedifyService.Controllers
         /// <param name="n"></param>
         /// <returns>long</returns>
         [HttpGet]
-        [Route("Fibonacci/{n}")]
+        [Route("Fibonacci/")]
         public long Fibonacci(long n)
         {
             return GetNthFibonacciNumber(n);

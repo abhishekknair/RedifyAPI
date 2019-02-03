@@ -14,9 +14,10 @@ namespace RedifyService.Controllers
         /// <param name="sentence"></param>
         /// <returns>string</returns>
         [HttpGet]
-        [Route("ReverseWords/{sentence?}")]
-        public string ReverseWords(string sentence = "")
+        [Route("ReverseWords/")]
+        public string ReverseWords(string sentence="" )
         {
+            if(string.IsNullOrEmpty(sentence)) return "\"\"";
             return string.Join(" ", sentence.Split(' ').Select(x => new String(x.Reverse().ToArray())));
         }        
     }

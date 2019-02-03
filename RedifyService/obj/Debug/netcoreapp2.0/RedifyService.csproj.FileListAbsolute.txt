@@ -24,4 +24,4 @@ C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.dll
 C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.pdb
 C:\Applications\Redify\RedifyService\bin\Debug\netcoreapp2.0\app.yaml
 C:\Applications\Redify\RedifyService\bin\Debug\netcoreapp2.0\openapi.yaml
-C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.csprojAssemblyReference.cache
+C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.csprojResolveAssemblyReference.cache

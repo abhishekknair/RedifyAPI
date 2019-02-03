@@ -15,7 +15,7 @@ namespace RedifyService.Controllers
         /// <param name="c"></param>
         /// <returns>string</returns>
         [HttpGet]
-        [Route("TriangleType/{a}/{b}/{c}")]
+        [Route("TriangleType/")]
         public string TriangleType(int a, int b, int c)
         {
             return GetTriangleType(a, b, c);
