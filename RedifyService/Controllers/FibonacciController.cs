@@ -21,7 +21,7 @@ namespace RedifyService.Controllers
             }
             catch
             {
-                return StatusCode(500, "Error");
+                return Ok("Error");
             }
         }
 
