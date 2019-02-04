@@ -20,7 +20,7 @@ namespace RedifyService.Controllers
             {
                 if(!ModelState.IsValid)
                 {
-                    return BadRequest("The request is invalid");
+                    return Ok("The request is invalid");
                 }
                 var l = Convert.ToInt64(req.n);
                 if (l == 0)

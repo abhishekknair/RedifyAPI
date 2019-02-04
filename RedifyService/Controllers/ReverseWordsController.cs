@@ -19,7 +19,7 @@ namespace RedifyService.Controllers
         {
             if(!ModelState.IsValid)
             {
-                return BadRequest("The request is invalid");
+                return Ok("The request is invalid");
             }
             try
             {
