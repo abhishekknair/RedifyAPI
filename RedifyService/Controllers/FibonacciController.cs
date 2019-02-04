@@ -13,9 +13,16 @@ namespace RedifyService.Controllers
         /// <returns>long</returns>
         [HttpGet]
         [Route("Fibonacci/")]
-        public long Fibonacci(long n)
+        public IActionResult Fibonacci(long n)
         {
-            return GetNthFibonacciNumber(n);
+            try
+            {
+                return Ok(GetNthFibonacciNumber(n));
+            }
+            catch
+            {
+                return StatusCode(500, "Error");
+            }
         }
 
         private long GetNthFibonacciNumber(long n)

@@ -15,10 +15,17 @@ namespace RedifyService.Controllers
         /// <returns>string</returns>
         [HttpGet]
         [Route("ReverseWords/")]
-        public string ReverseWords(string sentence="" )
+        public IActionResult ReverseWords(string sentence="" )
         {
-            if(string.IsNullOrEmpty(sentence)) return "\"\"";
-            return string.Join(" ", sentence.Split(' ').Select(x => new String(x.Reverse().ToArray())));
+            try
+            {
+                if (string.IsNullOrEmpty(sentence)) return Ok("\"\"");
+                return Ok(string.Join(" ", sentence.Split(' ').Select(x => new String(x.Reverse().ToArray()))));
+            }
+            catch
+            {
+                return StatusCode(500, "Error");
+            }
         }        
     }
 }

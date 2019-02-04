@@ -11,10 +11,16 @@ namespace RedifyService.Controllers
         /// <returns>string</returns>
         [HttpGet]
         [Route("Token")]
-        public string Token()
+        public IActionResult Token()
         {
-            return "8c5965a8-cecb-4032-bd81-4e03438aab1e";
+            try
+            {
+                return Ok("8c5965a8-cecb-4032-bd81-4e03438aab1e");
+            }
+            catch
+            {
+                return StatusCode(500, "Error");
+            }
         }
-
     }
 }

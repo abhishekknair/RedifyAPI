@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Threading.Tasks;
 
 namespace RedifyService.Controllers
 {
@@ -16,9 +17,18 @@ namespace RedifyService.Controllers
         /// <returns>string</returns>
         [HttpGet]
         [Route("TriangleType/")]
-        public string TriangleType(int a, int b, int c)
+        public IActionResult TriangleType(int a, int b, int c)
         {
-            return GetTriangleType(a, b, c);
+            try
+            {
+                var response = GetTriangleType(a, b, c);
+
+                return response == "Error" ? StatusCode(500, "Error") : Ok(response);
+            }
+            catch
+            {
+                return StatusCode(500, "Error");
+            }
         }
 
         private string GetTriangleType(int side1, int side2, int side3)
