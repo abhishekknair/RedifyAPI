@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
 namespace RedifyService.Controllers
@@ -17,16 +16,12 @@ namespace RedifyService.Controllers
         /// <param name="c"></param>
         /// <returns>string</returns>
         [HttpGet]
-        [Route("TriangleType")]
-        public IActionResult TriangleType(Request request)
+        [Route("TriangleType/")]
+        public IActionResult TriangleType(int a, int b, int c)
         {
-            if(!ModelState.IsValid)
-            {
-                return BadRequest("The request is invalid");
-            }
             try
             {
-                var response = GetTriangleType(request.a, request.b, request.c);
+                var response = GetTriangleType(a, b, c);
 
                 return Ok(response);
             }
@@ -72,20 +67,5 @@ namespace RedifyService.Controllers
                 return "Error";
             }
         }
-    }
-
-    public class Request
-    {
-        [Required]
-        [Range(0, Int32.MaxValue, ErrorMessage = "The request is invalid")]
-        public int a { set; get; }
-
-        [Required]
-        [Range(0, Int32.MaxValue, ErrorMessage = "The request is invalid")]
-        public int b { set; get; }
-
-        [Required]
-        [Range(0, Int32.MaxValue, ErrorMessage = "The request is invalid")]
-        public int c { set; get; }
     }
 }
