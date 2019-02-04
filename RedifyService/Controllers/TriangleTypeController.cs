@@ -26,10 +26,7 @@ namespace RedifyService.Controllers
             }
             try
             {
-                var side1 = Convert.ToInt32(request.a);
-                var side2 = Convert.ToInt32(request.a);
-                var side3 = Convert.ToInt32(request.a);
-                var response = GetTriangleType(side1, side2, side3);
+                var response = GetTriangleType(request.a, request.b, request.c);
 
                 return Ok(response);
             }
@@ -81,14 +78,14 @@ namespace RedifyService.Controllers
     {
         [Required]
         [Range(0, Int32.MaxValue, ErrorMessage = "The request is invalid")]
-        public int? a { set; get; }
+        public int a { set; get; }
 
         [Required]
         [Range(0, Int32.MaxValue, ErrorMessage = "The request is invalid")]
-        public int? b { set; get; }
+        public int b { set; get; }
 
         [Required]
         [Range(0, Int32.MaxValue, ErrorMessage = "The request is invalid")]
-        public int? c { set; get; }
+        public int c { set; get; }
     }
 }
