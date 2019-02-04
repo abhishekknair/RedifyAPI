@@ -20,7 +20,8 @@ namespace RedifyService.Controllers
             {
                 if(!ModelState.IsValid)
                 {
-                    return Ok("The request is invalid");
+
+                    return BadRequest("The request is invalid");
                 }
                 var l = Convert.ToInt64(req.n);
                 if (l == 0)
@@ -28,23 +29,41 @@ namespace RedifyService.Controllers
                 else
                     return Ok(GetNthFibonacciNumber(l));
             }
-            catch
+            catch(System.OutOfMemoryException)
             {
+                return Ok("A value in the fibonacci sequence can only be number");
+            }
+            catch(Exception ex)
+            {
+                if (ex.Message.StartsWith("A value in the fibonacci sequence"))
+                    return Ok("A value in the fibonacci sequence can only be number");
                 return Ok("Error");
             }
         }
 
         private long GetNthFibonacciNumber(long n)
         {
-            Console.WriteLine("nth fib number");
             long number = n - 1; //Need to decrement by 1 since we are starting from 0
             long[] Fib = new long[number + 1];
             Fib[0] = 0;
             Fib[1] = 1;
+            Double d;
 
             for (long i = 2; i <= number; i++)
             {
                 Fib[i] = Fib[i - 2] + Fib[i - 1];
+                if (Double.IsNaN(Convert.ToDouble(Fib[i-2])))
+                {
+                    throw new Exception("A value in the fibonacci sequence can only be number");
+                }
+                if (Double.IsNaN(Convert.ToDouble(Fib[i-1])))
+                {
+                    throw new Exception("A value in the fibonacci sequence can only be number");
+                }
+                if (Double.IsNaN(Convert.ToDouble(Fib[i])))
+                {
+                    throw new Exception("A value in the fibonacci sequence can only be number");
+                }
             }
             return Fib[number];
         }        
