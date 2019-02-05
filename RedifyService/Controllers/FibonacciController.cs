@@ -20,7 +20,6 @@ namespace RedifyService.Controllers
             {
                 if(!ModelState.IsValid)
                 {
-
                     return StatusCode(200,"The request is invalid");
                 }
                 if (Double.IsNaN(Convert.ToDouble(req.n)))
@@ -29,17 +28,21 @@ namespace RedifyService.Controllers
                 }
                 var l = Convert.ToInt64(req.n);
                 if (l == 0)
-                    return Ok(0);
+                    return StatusCode(200,0);
                 else
                     return StatusCode(200,GetNthFibonacciNumber(l));
             }
-            catch(System.OutOfMemoryException)
+            catch(OutOfMemoryException)
             {
-                return StatusCode(500,"A value in the fibonacci sequence can only be number");
+                return StatusCode(500, "The request is invalid");
             }
-            catch(Exception ex)
+            catch (OverflowException)
             {
-                return StatusCode(500, "A value in the fibonacci sequence can only be number");
+                return StatusCode(500, "The request is invalid");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error");
             }
         }
 
