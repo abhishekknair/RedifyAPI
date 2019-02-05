@@ -31,11 +31,11 @@ namespace RedifyService.Controllers
             }
             catch(System.OutOfMemoryException)
             {
-                return StatusCode(200,"A value in the fibonacci sequence can only be number");
+                return StatusCode(500,"A value in the fibonacci sequence can only be number");
             }
-            catch
+            catch(Exception ex)
             {
-                return StatusCode(200,"Error");
+                return StatusCode(500,"Error");
             }
         }
 

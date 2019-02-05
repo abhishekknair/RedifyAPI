@@ -19,7 +19,7 @@ namespace RedifyService.Controllers
             }
             catch
             {
-                return StatusCode(200,"Error");
+                return StatusCode(500,"Error");
             }
         }
     }
