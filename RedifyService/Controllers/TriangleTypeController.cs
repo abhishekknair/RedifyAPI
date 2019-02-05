@@ -23,11 +23,11 @@ namespace RedifyService.Controllers
             {
                 var response = GetTriangleType(a, b, c);
 
-                return Ok(response);
+                return StatusCode(200,response);
             }
             catch
             {
-                return Ok("Error");
+                return StatusCode(500,"Error");
             }
         }
 

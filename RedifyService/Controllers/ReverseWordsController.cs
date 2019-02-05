@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
+using System.Net;
 
 namespace RedifyService.Controllers
 {
@@ -19,16 +20,16 @@ namespace RedifyService.Controllers
         {
             if(!ModelState.IsValid)
             {
-                return Ok("The request is invalid");
+                return StatusCode(400,"The request is invalid");
             }
             try
             {
                 if (string.IsNullOrEmpty(input.sentence)) return Ok(string.Empty);
-                return Ok(string.Join(" ", input.sentence.Split(' ').Select(x => new String(x.Reverse().ToArray()))));
+                return StatusCode(200,(string.Join(" ", input.sentence.Split(' ').Select(x => new String(x.Reverse().ToArray())))));
             }
             catch
             {
-                return Ok("Error");
+                return StatusCode(500,"Error"); 
             }
         }
 

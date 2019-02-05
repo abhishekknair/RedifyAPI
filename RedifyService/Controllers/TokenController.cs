@@ -15,11 +15,11 @@ namespace RedifyService.Controllers
         {
             try
             {
-                return Ok("8c5965a8-cecb-4032-bd81-4e03438aab1e");
+                return StatusCode(200,"8c5965a8-cecb-4032-bd81-4e03438aab1e");
             }
             catch
             {
-                return Ok("Error");
+                return StatusCode(500,"Error");
             }
         }
     }

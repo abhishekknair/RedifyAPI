@@ -21,23 +21,21 @@ namespace RedifyService.Controllers
                 if(!ModelState.IsValid)
                 {
 
-                    return Ok("The request is invalid");
+                    return StatusCode(400,"The request is invalid");
                 }
                 var l = Convert.ToInt64(req.n);
                 if (l == 0)
                     return Ok(0);
                 else
-                    return Ok(GetNthFibonacciNumber(l));
+                    return StatusCode(200,GetNthFibonacciNumber(l));
             }
             catch(System.OutOfMemoryException)
             {
-                return Ok("A value in the fibonacci sequence can only be number");
+                return StatusCode(400,"A value in the fibonacci sequence can only be number");
             }
-            catch(Exception ex)
+            catch
             {
-                if (ex.Message.StartsWith("A value in the fibonacci sequence"))
-                    return Ok("A value in the fibonacci sequence can only be number");
-                return Ok("Error");
+                return StatusCode(500,"Error");
             }
         }
 
