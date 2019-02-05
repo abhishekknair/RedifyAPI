@@ -20,7 +20,7 @@ namespace RedifyService.Controllers
         {
             if(!ModelState.IsValid)
             {
-                return StatusCode(400,"The request is invalid");
+                return StatusCode(200,"The request is invalid");
             }
             try
             {

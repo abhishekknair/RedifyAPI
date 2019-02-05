@@ -21,7 +21,7 @@ namespace RedifyService.Controllers
                 if(!ModelState.IsValid)
                 {
 
-                    return StatusCode(400,"The request is invalid");
+                    return StatusCode(200,"The request is invalid");
                 }
                 var l = Convert.ToInt64(req.n);
                 if (l == 0)
@@ -31,7 +31,7 @@ namespace RedifyService.Controllers
             }
             catch(System.OutOfMemoryException)
             {
-                return StatusCode(400,"A value in the fibonacci sequence can only be number");
+                return StatusCode(200,"A value in the fibonacci sequence can only be number");
             }
             catch
             {
