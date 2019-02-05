@@ -31,7 +31,7 @@ namespace RedifyService.Controllers
             }
             catch(System.OutOfMemoryException)
             {
-                return StatusCode(400,"A value in the fibonacci sequence can only be number");
+                return StatusCode(200,"A value in the fibonacci sequence can only be number");
             }
             catch
             {
