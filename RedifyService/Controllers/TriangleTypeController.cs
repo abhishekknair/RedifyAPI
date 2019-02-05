@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Threading.Tasks;
 
 namespace RedifyService.Controllers
 {
@@ -16,7 +15,7 @@ namespace RedifyService.Controllers
         /// <param name="c"></param>
         /// <returns>string</returns>
         [HttpGet]
-        [Route("TriangleType/")]
+        [Route("TriangleType")]
         public IActionResult TriangleType(int a, int b, int c)
         {
             try

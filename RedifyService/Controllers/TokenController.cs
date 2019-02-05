@@ -13,14 +13,7 @@ namespace RedifyService.Controllers
         [Route("Token")]
         public IActionResult Token()
         {
-            try
-            {
-                return StatusCode(200,"8c5965a8-cecb-4032-bd81-4e03438aab1e");
-            }
-            catch
-            {
-                return StatusCode(500,"Error");
-            }
+            return StatusCode(200,"8c5965a8-cecb-4032-bd81-4e03438aab1e");
         }
     }
 }
