@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
 
 namespace RedifyService.Controllers
 {
@@ -41,17 +40,17 @@ namespace RedifyService.Controllers
                 }
 
                 //check for triangle inequality theorem
-
                 if (((side2 + side3) < side1) || ((side1 + side3) < side2) || ((side1 + side2) < side3))
                 {
                     return "Error";
                 }
-
+                
                 //check if all sides are equal
                 if (side1 == side2 && side1 == side3)
                 {
                     return "Equilateral";
                 }
+                //check if any two sides are equal
                 else if (side1 == side2 || side1 == side3 || side2 == side3) //check if any two sides are equal
                 {
                     return "Isosceles";
@@ -61,7 +60,7 @@ namespace RedifyService.Controllers
                     return "Scalene";
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 return "Error";
             }

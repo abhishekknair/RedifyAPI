@@ -10885,9 +10885,9 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Applications\\Redify\\RedifyService\\RedifyService.csproj",
-      "projectName": "RedifyService",
-      "projectPath": "C:\\Applications\\Redify\\RedifyService\\RedifyService.csproj",
+      "projectUniqueName": "C:\\Applications\\Redify\\RedifyService\\ReadifyService.csproj",
+      "projectName": "ReadifyService",
+      "projectPath": "C:\\Applications\\Redify\\RedifyService\\ReadifyService.csproj",
       "packagesPath": "C:\\Users\\naira\\.nuget\\packages\\",
       "outputPath": "C:\\Applications\\Redify\\RedifyService\\obj\\",
       "projectStyle": "PackageReference",

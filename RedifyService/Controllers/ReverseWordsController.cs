@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RedifyService.Models;
 using System;
 using System.Linq;
 
@@ -16,7 +15,7 @@ namespace RedifyService.Controllers
         /// <returns>string</returns>
         [HttpGet]
         [Route("ReverseWords")]
-        public IActionResult ReverseWords(ReverseWordsBindingModel model)
+        public IActionResult ReverseWords(string sentence)
         {
             if(!ModelState.IsValid)
             {
@@ -24,8 +23,8 @@ namespace RedifyService.Controllers
             }
             try
             {
-                if (string.IsNullOrEmpty(model.sentence)) return Ok(string.Empty);
-                return StatusCode(200,(string.Join(" ", model.sentence.Split(' ').Select(x => new String(x.Reverse().ToArray())))));
+                return string.IsNullOrEmpty(sentence) ? StatusCode(200,string.Empty)
+                    : StatusCode(200,(string.Join(" ", sentence.Split(' ').Select(x => new String(x.Reverse().ToArray())))));
             }
             catch
             {

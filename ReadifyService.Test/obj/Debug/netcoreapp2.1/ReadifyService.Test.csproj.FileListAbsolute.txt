@@ -1,0 +1,14 @@
+C:\Applications\Redify\ReadifyService.Test\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Applications\Redify\ReadifyService.Test\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Applications\Redify\ReadifyService.Test\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Applications\Redify\ReadifyService.Test\bin\Debug\netcoreapp2.1\ReadifyService.Test.deps.json
+C:\Applications\Redify\ReadifyService.Test\bin\Debug\netcoreapp2.1\ReadifyService.Test.runtimeconfig.json
+C:\Applications\Redify\ReadifyService.Test\bin\Debug\netcoreapp2.1\ReadifyService.Test.runtimeconfig.dev.json
+C:\Applications\Redify\ReadifyService.Test\bin\Debug\netcoreapp2.1\ReadifyService.Test.dll
+C:\Applications\Redify\ReadifyService.Test\bin\Debug\netcoreapp2.1\ReadifyService.Test.pdb
+C:\Applications\Redify\ReadifyService.Test\obj\Debug\netcoreapp2.1\ReadifyService.Test.csprojResolveAssemblyReference.cache
+C:\Applications\Redify\ReadifyService.Test\obj\Debug\netcoreapp2.1\ReadifyService.Test.csproj.CoreCompileInputs.cache
+C:\Applications\Redify\ReadifyService.Test\obj\Debug\netcoreapp2.1\ReadifyService.Test.AssemblyInfoInputs.cache
+C:\Applications\Redify\ReadifyService.Test\obj\Debug\netcoreapp2.1\ReadifyService.Test.AssemblyInfo.cs
+C:\Applications\Redify\ReadifyService.Test\obj\Debug\netcoreapp2.1\ReadifyService.Test.dll
+C:\Applications\Redify\ReadifyService.Test\obj\Debug\netcoreapp2.1\ReadifyService.Test.pdb

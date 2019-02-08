@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RedifyService.Models;
 using System;
-using System.ComponentModel.DataAnnotations;
 
 namespace RedifyService.Controllers
 {
@@ -27,10 +26,9 @@ namespace RedifyService.Controllers
                 {
                     return StatusCode(200, "A value in the fibonacci sequence can only be number");
                 }
-                if (model.n == 0)
-                    return StatusCode(200,0);
-                else
-                    return StatusCode(200,GetNthFibonacciNumber(model.n));
+
+                return model.n == 0 ?  StatusCode(200,0)
+                    : StatusCode(200,GetNthFibonacciNumber(model.n));
             }
             catch(OutOfMemoryException)
             {
@@ -56,18 +54,7 @@ namespace RedifyService.Controllers
             for (long i = 2; i <= number; i++)
             {
                 Fib[i] = Fib[i - 2] + Fib[i - 1];
-                if (Double.IsNaN(Convert.ToDouble(Fib[i-2])))
-                {
-                    throw new Exception("A value in the fibonacci sequence can only be number");
-                }
-                if (Double.IsNaN(Convert.ToDouble(Fib[i-1])))
-                {
-                    throw new Exception("A value in the fibonacci sequence can only be number");
-                }
-                if (Double.IsNaN(Convert.ToDouble(Fib[i])))
-                {
-                    throw new Exception("A value in the fibonacci sequence can only be number");
-                }
+               
             }
             return Fib[number];
         }        

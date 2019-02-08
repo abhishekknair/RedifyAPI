@@ -24,3 +24,4 @@ C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.Assem
 C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.RazorTargetAssemblyInfo.cache
 C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.dll
 C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.pdb
+C:\Applications\Redify\RedifyService\obj\Debug\netcoreapp2.0\RedifyService.csprojResolveAssemblyReference.cache
