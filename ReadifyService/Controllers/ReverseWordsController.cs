@@ -4,6 +4,7 @@ using System.Linq;
 
 namespace ReadifyService.Controllers
 {
+    [Route("api/")]
     public class ReverseWordsController : Controller
     {
         /// <summary>

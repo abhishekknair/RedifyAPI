@@ -5,7 +5,7 @@ using System;
 
 namespace ReadifyService.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/")]
     public class FibonacciController : Controller
     {
         private double phi = 1.6180339;
