@@ -15,10 +15,6 @@ namespace ReadifyService.Controllers
         [Route("ReverseWords")]
         public IActionResult ReverseWords(string sentence)
         {
-            if (!ModelState.IsValid)
-            {
-                return StatusCode(200, "The request is invalid");
-            }
             try
             {
                 return string.IsNullOrEmpty(sentence) ? StatusCode(200, string.Empty)

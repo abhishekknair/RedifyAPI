@@ -31,7 +31,7 @@ namespace ReadifyService.Controllers
             }
             catch (Exception ex)
             {
-                if (ex.Message.StartsWith(""))
+                if (ex.Message.StartsWith("A value in the fibonacci"))
                     return StatusCode(200, "no content");
                 else
                     return StatusCode(200, "Error");
