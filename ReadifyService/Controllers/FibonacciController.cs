@@ -32,7 +32,7 @@ namespace ReadifyService.Controllers
             catch (Exception ex)
             {
                 if (ex.Message.StartsWith(""))
-                    return StatusCode(400, "no content");
+                    return StatusCode(200, "no content");
                 else
                     return StatusCode(200, "Error");
             }
