@@ -1,0 +1,11 @@
+C:\Submissions\Readify\ReadifyService\ReadifyService\bin\Debug\netcoreapp2.0\ReadifyService.deps.json
+C:\Submissions\Readify\ReadifyService\ReadifyService\bin\Debug\netcoreapp2.0\ReadifyService.runtimeconfig.json
+C:\Submissions\Readify\ReadifyService\ReadifyService\bin\Debug\netcoreapp2.0\ReadifyService.runtimeconfig.dev.json
+C:\Submissions\Readify\ReadifyService\ReadifyService\bin\Debug\netcoreapp2.0\ReadifyService.dll
+C:\Submissions\Readify\ReadifyService\ReadifyService\obj\Debug\netcoreapp2.0\ReadifyService.csprojResolveAssemblyReference.cache
+C:\Submissions\Readify\ReadifyService\ReadifyService\obj\Debug\netcoreapp2.0\ReadifyService.csproj.CoreCompileInputs.cache
+C:\Submissions\Readify\ReadifyService\ReadifyService\obj\Debug\netcoreapp2.0\ReadifyService.AssemblyInfoInputs.cache
+C:\Submissions\Readify\ReadifyService\ReadifyService\obj\Debug\netcoreapp2.0\ReadifyService.AssemblyInfo.cs
+C:\Submissions\Readify\ReadifyService\ReadifyService\bin\Debug\netcoreapp2.0\ReadifyService.pdb
+C:\Submissions\Readify\ReadifyService\ReadifyService\obj\Debug\netcoreapp2.0\ReadifyService.dll
+C:\Submissions\Readify\ReadifyService\ReadifyService\obj\Debug\netcoreapp2.0\ReadifyService.pdb
